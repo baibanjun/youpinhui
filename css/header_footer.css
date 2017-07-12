@@ -1,0 +1,104 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;color: #666;font-size: 12px;}
+li{list-style: none;}
+p,span,input{font-size: 12px;color: #666;}
+
+/***********************top***************************/
+.top{width: 100%;height: 28px;border-bottom: 1px solid #ccc;}
+.topbox{width: 1000px;height: 28px;margin: 0 auto;}
+.top_gg{display: block;width: 50px;height: 28px;
+text-align: right;float: left;line-height: 28px;
+background: url(../img/icons.png) no-repeat -100px -196px;}
+.top_news{
+	width: 200px;height: 28px;
+	overflow: hidden;float: left;
+}
+.top_news li{width: 200px;height: 28px;line-height: 28px;}
+.top_list{
+	width: 530px;height: 28px;float: right;
+}
+.top_list li{
+	height: 28px;float: left;padding: 0 5px;
+	line-height: 28px;
+}
+.top_list li span{padding-left: 10px;}
+.top_list li:nth-child(8){
+	padding-left:17px;position: relative;
+	background: url(../img/icon.png) no-repeat 3px -22px;}
+.top_list li a:hover{color:#ff504a;}
+.top_list li:nth-child(8) img{
+	position: absolute;top:28px;left: -5px;
+	display: none;
+}
+.top_list li:nth-child(8):hover img{
+	display: block;
+}
+/***********************logo***************************/
+.header_logo{
+	width: 100%;height: 106px;
+	}
+ .header_logo .logobox{
+ 	width: 1000px;height: 106px;
+ 	margin: 0 auto;
+ }
+.logobox .logo_img{
+	float: left; line-height: 106px;
+}
+.header_search{
+	width: 426px;height: 36px;
+	float: left;
+	margin:20px 60px ;
+}
+#header_search_text{
+	width: 342px;height: 32px;
+	border: 2px solid #f70801;float: left;
+}
+#header_search_btn{
+	width: 80px;height: 36px;
+	background: #F70801;
+	color: white;border: none;
+}
+.header_cart{
+	text-align: center;line-height: 34px;
+	width: 140px;height: 34px;
+	border: 1px solid #CCCCCC;
+	float: right;margin-top: 20px;
+	position: relative;
+	background: url(../img/gwc.png) no-repeat 15px 8px;
+}
+.header_cart a:hover{
+	color: #F70801;
+}
+.header_cart .cart_amount{
+	display: inline-block;width: 16px;height: 16px;
+	text-align: center;line-height: 15px;
+	border-radius:8px;background: #F70801;color: white;
+	position: absolute;
+	top: -5px;left: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
