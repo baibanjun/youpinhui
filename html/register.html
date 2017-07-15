@@ -3,7 +3,97 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/header_footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
 	</head>
 	<body>
+		<!--
+        	作者：291879228@qq.com
+        	时间：2017-07-15
+        	描述：top
+        -->
+		<div class="top">
+			<div class="topbox">
+				<ul class="top_list">
+					<li><a href="register.html" target="_blank">注册</a><span>|</span></li>
+					<li><a href="login.html" target="_blank">登录</a><span>|</span></li>
+					<li><a href="#">我的订单</a><span>|</span></li>
+					<li><a href="#">物流查询</a><span>|</span></li>
+					<li><a href="#">我的关注</a><span>|</span></li>
+					<li><a href="#">资讯</a><span>|</span></li>
+					<li><a href="#">品牌馆</a><span>|</span></li>
+					<li><a href="#">手机优品惠</a><div class="top_ewm"><img src="../img/ewm.jpg" /></div></li>
+				</ul>
+			</div>
+		</div>
+		<!--
+        	作者：291879228@qq.com
+        	时间：2017-07-15
+        	描述：register_logo
+        -->
+        <div class="register_logo">
+        	<div class="logo_box">
+        		<a href="index.html" class="logo_img_1"></a>
+        		<span class="logo_img_2"></span>
+        		<span class="now_login">已经注册，<a href="login.html">现在登录》</a></span>
+        	</div>
+        </div>
+        <!--
+        	作者：291879228@qq.com
+        	时间：2017-07-15
+        	描述：register_form
+        -->
+        <div class="register_form">
+        	<img src="../img/logEWM.gif" class="register_ewm"/>
+        	<div class="register_way">
+        		<div class="register_tel"><span></span>手机注册</div>
+        	</div>
+        	<div class="register_tel_form">
+        			<div class="tel_num ">
+        				<div class="title_box">手机号码：</div>
+        				<input type="text" id="register_tel_num"/>
+        				<div class="tel_error">请输入正确的手机号码</div>
+        			</div>
+        			<div class="v_code">
+        				<div class="title_box">验证码：</div>
+        				<input type="text" id="register_v_code"/>
+        				<div class="code_img"></div>
+        				<div class="re_get_code"><span>看不清，</span>
+        					<span><a href="javascript:void(0)" id="re_get_code">换一张</a></span></div>
+        				<div class="code_error">验证码错误</div>
+        				
+        			</div>
+        			<div class="set_password">
+        				<div class="title_box">设置密码：</div>
+        				<input type="text" id="set_password"/>
+        				<div class="password_status">密码安全</div>
+        			</div>
+        			<div class="check_password">
+        				<div class="title_box">确认密码：</div>
+        				<input type="text" id="check_password"/>
+        				<div class="check_error">两次输入的密码不相同</div>
+        			</div>
+        			<div class="phone_message">
+        				<div class="title_box">短信验证码：</div>
+        				<input type="text" id="phone_message"/>
+        				<a href="javascript:void(0)" id="get_message_btn">获取手机验证码</a>
+        				<div class="tel_error">手机验证码有误</div>
+        			</div>
+        			<div class="user_read">
+        				<div class="title_box"></div> 
+        				<p><input type="checkbox" />我已阅读<a href="#">《优品惠用户服务承诺》</a></p>
+        			</div>
+        			<div class="post_btn_box">
+        				<div class="title_box"></div>
+        				<button id="post_btn">提&nbsp;&nbsp;交</button>
+        			</div>
+        			<div class="register_help">
+        				<div class="title_box"></div>
+        				<p>如有疑问请点击<a href="#">帮助中心</a>，或拨打客服热线：
+        					<span style="color: #F70801;">400-707-0707</span></p>
+        			</div>
+        			
+        	</div>	
+        </div>
 	</body>
 </html>

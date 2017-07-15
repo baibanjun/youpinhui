@@ -1,0 +1,284 @@
+.register_logo {
+  width: 100%;
+  height: 110px;
+}
+
+.register_logo .logo_box {
+  width: 1000px;
+  height: 110px;
+  margin: 0 auto;
+  line-height: 110px;
+}
+
+.register_logo .logo_box .logo_img_1 {
+  display: inline-block;
+  width: 190px;
+  height: 38px;
+  background: url(../img/welland.gif) no-repeat 0 -10px;
+}
+
+.register_logo .logo_box .logo_img_2 {
+  display: inline-block;
+  width: 180px;
+  height: 38px;
+  background: url(../img/welreg_01.gif) no-repeat 0 -10px;
+}
+
+.register_logo .logo_box .now_login {
+  float: right;
+  margin-right: 40px;
+}
+
+.register_logo .logo_box .now_login a {
+  color: #269ABC;
+}
+
+.register_form {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  font-size: 12px;
+  position: relative;
+}
+
+.register_form .register_ewm {
+  position: absolute;
+  top: 0px;
+  left: -130px;
+}
+
+.register_form .register_way {
+  width: 1000px;
+  height: 42px;
+}
+
+.register_form .register_way .register_tel {
+  width: 220px;
+  height: 42px;
+  border-radius: 3px 3px 0 0;
+  float: left;
+  text-align: center;
+  line-height: 42px;
+  background: #ff8400;
+  font-size: 16px;
+  color: white;
+}
+
+.register_form .register_way .register_tel span {
+  display: inline-block;
+  width: 17px;
+  height: 19px;
+  background: url(../img/welreg_01.gif) no-repeat 0 -230px;
+}
+
+.register_form .register_tel_form {
+  width: 996px;
+  height: 450px;
+  border: 2px solid #ff8400;
+}
+
+.register_form .register_tel_form .title_box {
+  width: 180px;
+  height: 38px;
+  text-align: right;
+  line-height: 38px;
+  float: left;
+}
+
+.register_form .register_tel_form .tel_num {
+  margin-top: 10px;
+  width: 996px;
+  height: 40px;
+}
+
+.register_form .register_tel_form .tel_num #register_tel_num {
+  width: 300px;
+  height: 38px;
+  float: left;
+  margin-left: 20px;
+}
+
+.register_form .register_tel_form .tel_num .tel_error {
+  width: 200px;
+  height: 38px;
+  float: left;
+  line-height: 38px;
+  color: #F70801;
+  display: none;
+}
+
+.register_form .register_tel_form .v_code {
+  margin-top: 10px;
+  width: 100%;
+  height: 42px;
+}
+
+.register_form .register_tel_form .v_code #register_v_code {
+  width: 150px;
+  height: 38px;
+  float: left;
+  margin-left: 20px;
+}
+
+.register_form .register_tel_form .v_code .code_img {
+  width: 92px;
+  height: 40px;
+  float: left;
+}
+
+.register_form .register_tel_form .v_code .code_img img {
+  width: 92px;
+  height: 38px;
+}
+
+.register_form .register_tel_form .v_code .re_get_code {
+  width: 100px;
+  height: 40px;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+}
+
+.register_form .register_tel_form .v_code .re_get_code #re_get_code {
+  color: #269ABC;
+}
+
+.register_form .register_tel_form .v_code .code_error {
+  width: 200px;
+  height: 40px;
+  color: #F70801;
+  float: left;
+  line-height: 40px;
+  display: none;
+}
+
+.register_form .register_tel_form .set_password {
+  width: 100%;
+  height: 42px;
+  margin-top: 10px;
+}
+
+.register_form .register_tel_form .set_password #set_password {
+  width: 300px;
+  height: 38px;
+  float: left;
+  margin-left: 20px;
+}
+
+.register_form .register_tel_form .set_password .password_status {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  display: none;
+}
+
+.register_form .register_tel_form .check_password {
+  width: 100%;
+  height: 42px;
+  margin-top: 10px;
+}
+
+.register_form .register_tel_form .check_password #check_password {
+  width: 300px;
+  height: 38px;
+  float: left;
+  margin-left: 20px;
+}
+
+.register_form .register_tel_form .check_password .check_error {
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  display: none;
+}
+
+.register_form .register_tel_form .phone_message {
+  width: 100%;
+  height: 42px;
+  margin-top: 10px;
+}
+
+.register_form .register_tel_form .phone_message #phone_message {
+  width: 150px;
+  height: 38px;
+  float: left;
+  margin-left: 20px;
+}
+
+.register_form .register_tel_form .phone_message #get_message_btn {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  border: 1px solid #8C8C8C;
+  border-radius: 3px;
+  float: left;
+  margin: 5px 5px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.register_form .register_tel_form .phone_message .tel_error {
+  width: 120px;
+  height: 40px;
+  float: left;
+  line-height: 40px;
+  color: #F70801;
+  display: none;
+}
+
+.register_form .register_tel_form .user_read {
+  width: 100%;
+  height: 42px;
+  margin-top: 10px;
+}
+
+.register_form .register_tel_form .user_read p {
+  width: 200px;
+  height: 40px;
+  float: left;
+  margin-left: 20px;
+  line-height: 40px;
+}
+
+.register_form .register_tel_form .user_read p a {
+  color: #269ABC;
+}
+
+.register_form .register_tel_form .post_btn_box {
+  width: 100%;
+  height: 42px;
+  margin-top: 10px;
+}
+
+.register_form .register_tel_form .post_btn_box #post_btn {
+  width: 128px;
+  height: 34px;
+  border: 0;
+  border-radius: 3px;
+  background: #e50038;
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+.register_form .register_tel_form .register_help {
+  width: 100%;
+  height: 42px;
+  margin-top: 10px;
+}
+
+.register_form .register_tel_form .register_help p {
+  width: 400px;
+  height: 40px;
+  float: left;
+  margin-left: 20px;
+  line-height: 40px;
+}
+
+.register_form .register_tel_form .register_help p a {
+  color: #269ABC;
+}
