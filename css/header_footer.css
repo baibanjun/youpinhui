@@ -149,6 +149,7 @@ background: url(../img/icons.png) no-repeat -100px -196px;}
 }
 .header_right_nav:hover .nav_list{
 	display: block;
+	z-index: 2;
 }
 .nav_list .nav_list_box{
 	width: 165.6px;height: 250px;

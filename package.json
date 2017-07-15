@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

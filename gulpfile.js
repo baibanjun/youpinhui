@@ -1,22 +1,22 @@
 // 引入插件模块
 var gulp = require("gulp"),
-	minifyCss = require("gulp-clean-css"),
-	uglify = require("gulp-uglify"),
+	// minifyCss = require("gulp-clean-css"),
+	// uglify = require("gulp-uglify"),
 	sass = require("gulp-sass"),
 	livereload = require("gulp-livereload");
 
-gulp.task("minify", function(){
-	gulp.src("css/*.css")
-		.pipe(minifyCss())
-		.pipe(gulp.dest("dist/css/"));
-});
+// gulp.task("minify", function(){
+// 	gulp.src("css/*.css")
+// 		.pipe(minifyCss())
+// 		.pipe(gulp.dest("dist/css/"));
+// });
 
-// 自定义任务，压缩 JS
-gulp.task("uglify", function(){
-	gulp.src("js/*.js")
-		.pipe(uglify())
-		.pipe(gulp.dest("dist/js/"));
-});
+// // 自定义任务，压缩 JS
+// gulp.task("uglify", function(){
+// 	gulp.src("js/*.js")
+// 		.pipe(uglify())
+// 		.pipe(gulp.dest("dist/js/"));
+// });
 
 // 自定义任务，编译SASS文件
 gulp.task("sass", function(){
