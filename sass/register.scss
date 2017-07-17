@@ -90,7 +90,7 @@
             }
             .code_img{
                 width: 92px;height: 40px;
-                float: left;
+                float: left;margin-left: 5px;
                 img{
                     width: 92px;height:38px;
                 }
@@ -159,7 +159,7 @@
                 text-align: center;
                 font-size: 14px;
             }
-            .tel_error{
+            .tel_code_error{
                 width: 120px;height: 40px;
                 float: left;line-height: 40px;
                 color: #F70801;

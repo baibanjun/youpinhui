@@ -124,6 +124,7 @@
   width: 92px;
   height: 40px;
   float: left;
+  margin-left: 5px;
 }
 
 .register_form .register_tel_form .v_code .code_img img {
@@ -220,7 +221,7 @@
   font-size: 14px;
 }
 
-.register_form .register_tel_form .phone_message .tel_error {
+.register_form .register_tel_form .phone_message .tel_code_error {
   width: 120px;
   height: 40px;
   float: left;

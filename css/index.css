@@ -110,7 +110,7 @@
   height: 77px;
   width: 30px;
   float: left;
-  margin-top: 20px;
+  margin-top: 22px;
   padding-top: 30px;
   margin-left: 50px;
   background: url(../img/icons.png) no-repeat;
@@ -131,6 +131,11 @@
 
 .index_day_goods .tv_show .tv_show_footer ul li:nth-child(3) {
   background-position: -45px -198px;
+}
+
+.index_day_goods .tv_show .tv_show_footer ul li:hover {
+  background-position-y: -201px;
+  transition: all .5s;
 }
 
 .index_choiceness {

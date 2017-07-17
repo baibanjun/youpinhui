@@ -5,6 +5,8 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/header_footer.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<script src="../lib/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/register.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--
@@ -57,27 +59,27 @@
         			<div class="v_code">
         				<div class="title_box">验证码：</div>
         				<input type="text" id="register_v_code"/>
-        				<div class="code_img"></div>
+        				<div class="code_img"><img src=""/></div>
         				<div class="re_get_code"><span>看不清，</span>
         					<span><a href="javascript:void(0)" id="re_get_code">换一张</a></span></div>
-        				<div class="code_error">验证码错误</div>
+        				<div class="code_error"></div>
         				
         			</div>
         			<div class="set_password">
         				<div class="title_box">设置密码：</div>
-        				<input type="text" id="set_password"/>
-        				<div class="password_status">密码安全</div>
+        				<input type="password" id="set_password"/>
+        				<div class="password_status"></div>
         			</div>
         			<div class="check_password">
         				<div class="title_box">确认密码：</div>
-        				<input type="text" id="check_password"/>
-        				<div class="check_error">两次输入的密码不相同</div>
+        				<input type="password" id="check_password"/>
+        				<div class="check_error"></div>
         			</div>
         			<div class="phone_message">
         				<div class="title_box">短信验证码：</div>
         				<input type="text" id="phone_message"/>
         				<a href="javascript:void(0)" id="get_message_btn">获取手机验证码</a>
-        				<div class="tel_error">手机验证码有误</div>
+        				<div class="tel_code_error"></div>
         			</div>
         			<div class="user_read">
         				<div class="title_box"></div> 
@@ -95,5 +97,12 @@
         			
         	</div>	
         </div>
+        
+        <!--
+        	作者：291879228@qq.com
+        	时间：2017-07-17
+        	描述：footer
+        -->
+        <div id="footer"></div>
 	</body>
 </html>

@@ -1,0 +1,117 @@
+.login_logo {
+  width: 100%;
+  height: 110px;
+}
+
+.login_logo .logo_box {
+  width: 1000px;
+  height: 110px;
+  margin: 0 auto;
+  line-height: 110px;
+}
+
+.login_logo .logo_box .logo_img_1 {
+  display: inline-block;
+  width: 190px;
+  height: 38px;
+  background: url(../img/welland.gif) no-repeat 0 -10px;
+}
+
+.login_logo .logo_box .logo_img_2 {
+  display: inline-block;
+  width: 180px;
+  height: 38px;
+  background: url(../img/welland.gif) no-repeat 0 -70px;
+}
+
+.login_logo .logo_box .logo_help {
+  float: right;
+  margin-right: 40px;
+}
+
+.login_logo .logo_box .logo_help a {
+  color: #269ABC;
+}
+
+.login_box {
+  width: 1000px;
+  height: 380px;
+  margin: 0 auto;
+  border: 2px solid #ff8400;
+  margin-bottom: 30px;
+}
+
+.login_box .login_form {
+  width: 360px;
+  height: 200px;
+  position: relative;
+  float: left;
+  margin-left: 90px;
+  margin-top: 55px;
+}
+
+.login_box .login_form .login_ewm {
+  position: absolute;
+  top: 0px;
+  left: -220px;
+}
+
+.login_box .login_form #login_username {
+  width: 360px;
+  height: 32px;
+}
+
+.login_box .login_form #login_password {
+  width: 360px;
+  height: 32px;
+}
+
+.login_box .login_form #login_btn {
+  width: 360px;
+  height: 32px;
+  border: none;
+  border-radius: 3px;
+  background: #f11c44;
+  font-size: 14px;
+  color: white;
+  margin-top: 15px;
+}
+
+.login_box .login_form p {
+  margin-top: 5px;
+}
+
+.login_box .login_form p span {
+  float: right;
+}
+
+.login_box .login_form p span a {
+  color: #269ABC;
+}
+
+.login_box .login_right {
+  width: 153px;
+  height: 180px;
+  float: right;
+  margin-top: 66px;
+  margin-right: 80px;
+}
+
+.login_box .login_right p {
+  margin-top: 15px;
+}
+
+.login_box .login_right p a {
+  display: block;
+  width: 142px;
+  height: 32px;
+  border: 1px solid #ff8400;
+  color: #ff8400;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 3px;
+}
+
+.login_box .login_right p a:hover {
+  text-decoration: underline;
+}

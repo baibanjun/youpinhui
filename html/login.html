@@ -3,7 +3,85 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/header_footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+		<script src="../lib/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
+		<!--
+        	作者：291879228@qq.com
+        	时间：2017-07-17
+        	描述：top
+        -->
+		<div class="top">
+			<div class="topbox">
+				<ul class="top_list">
+					<li><a href="register.html" target="_blank">注册</a><span>|</span></li>
+					<li><a href="login.html" target="_blank">登录</a><span>|</span></li>
+					<li><a href="#">我的订单</a><span>|</span></li>
+					<li><a href="#">物流查询</a><span>|</span></li>
+					<li><a href="#">我的关注</a><span>|</span></li>
+					<li><a href="#">资讯</a><span>|</span></li>
+					<li><a href="#">品牌馆</a><span>|</span></li>
+					<li><a href="#">手机优品惠</a><div class="top_ewm"><img src="../img/ewm.jpg" /></div></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--
+        	作者：291879228@qq.com
+        	时间：2017-07-17
+        	描述： logo
+         -->
+        	<div class="login_logo">
+        	<div class="logo_box">
+        		<a href="index.html" class="logo_img_1"></a>
+        		<span class="logo_img_2"></span>
+        		<span class="logo_help">如有问题请点击
+        			<a href="#">帮助中心</a>，或拨打客服热线：<span style="font-size: 14px;color: #FF0000;">400-707-0707</span></span>
+        	</div>
+        </div>
+       <!--
+       	作者：291879228@qq.com
+       	时间：2017-07-17
+       	描述：登录框
+       -->
+       <div class="login_box">
+       	<!--
+           	作者：291879228@qq.com
+           	时间：2017-07-17
+           	描述：登录表单
+           -->
+           
+       		<div class="login_form">
+       			<img src="../img/logEWM.gif" class="login_ewm"/>
+       			<p>手机号/邮箱/昵称</p>
+       			<p><input type="text" id="login_username"/></p>
+       			<p>密码</p>
+       			<p><input type="password" id="login_password" /></p>
+       			<p><input type="checkbox"  id="remember_username" />记住用户名
+       				<span><a href="#">忘记密码？</a></span></p>
+       				<button id="login_btn">登录</button>
+       		</div>
+       		<!--
+               	作者：291879228@qq.com
+               	时间：2017-07-17
+               	描述：右边选项
+               -->
+               <div class="login_right">
+               	<p>您还不是优品惠的会员？</p>
+               	<p><a href="register.html">免费注册></a></p>
+               	<p>电话订购过优品惠商品？</p>
+               	<p><a href="#">快速激活></a></p>
+               </div>
+       </div>
+       <!--
+       	作者：291879228@qq.com
+       	时间：2017-07-17
+       	描述：footer
+       -->
+       <div id="footer"></div>
 	</body>
 </html>
