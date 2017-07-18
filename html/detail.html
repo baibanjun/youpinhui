@@ -3,7 +3,141 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/header_footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/product.css"/>
+		<script src="../lib/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/detail.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
+		<!--
+        	作者：291879228@qq.com
+        	时间：2017-07-17
+        	描述：头部
+        -->
+		<div id="header"></div>
+		<!--
+        	作者：291879228@qq.com
+        	时间：2017-07-17
+        	描述：商品索引
+        -->
+		<div class="product_index">
+			<p>当前位置：<a href="index.html">首页</a><span>></span>
+						<a href="index.html">美食</a><span>></span>
+						<a href="index.html">营养保健</a><span>></span>
+						<a href="index.html">滋补调养</a><span>></span>
+						<a href="index.html"></a>
+			</p>
+		</div>
+		<!--
+        	作者：291879228@qq.com
+        	时间：2017-07-17
+        	描述：商品详单
+        -->
+        <div class="product_box">
+        	<!--商品左边-->
+        	<div class="product_show_left">
+        		<div class="img_main"><div class="len"></div></div>
+        		<div class="bigimg"></div>
+        	    <div class="product_small_imgs">
+        	    	<a href="javascript:void(0)" class="img_before"></a>
+        			<ul class="small_imgs_box">
+        				<li><img src="../img/products/p001_1.jpg"/></li>
+        				<li><img src="../img/products/p001_2.jpg"/></li>
+        				<li><img src="../img/products/p001_3.jpg"/></li>
+        				<li><img src="../img/products/p001_4.jpg"/></li>
+        				
+        			</ul>
+        			<a href="javascript:void(0)" class="img_next"></a>
+        	   	</div>
+        	   	<p>商品编号：<span class="product_id">001</span></p>
+        	</div>
+        	<!--商品右边详情-->
+        	<div class="product_detail">
+        		<p><span class="product_brand">怀山堂</span></p>
+        		<p class="p1"><span class="product_title">怀山堂 铁棍山药红豆薏米粉·92条</span></p>
+        		<p class="p2"><span class="product_introduce">本款商品选用山药、红豆和薏米，不含糖、添加剂和防腐剂，温补食养，即冲即饮，方便食用。</span></p>
+        		<div class="product_price_box">
+        			<ul>
+        				<li><span class="price_label_1">价格：</span>
+        					<span class="price_label_2">￥</span>
+        					<span class="product_price">250</span></li>
+        				<li><span class="price_label_3">优惠：</span>
+        					<div class="product_promotion">
+        						<p><span class="tag">立减</span><span>TV商品下单立减10元</span></p>
+        						<p class="p5"><span class="tag">包邮</span><span>订单金额满168元包邮</span></p>
+        					</div></li>
+        			</ul>
+        		</div>
+        		<div class="product_sendto">
+        			<p>送至：<select id="city_1"></select>
+        					<select id="city_2"></select>
+        					<select id="city_3"></select></p>
+        			<p>数量：<span class="amount_minus">-</span>
+        				<input type="text" id="product_buy_amount" value="1" />
+        				<span class="amount_add">+</span></p>
+        		</div>
+        		<div class="add_cart">
+        			<button id="add_cart_btn"><i></i>加入购物车</button>
+        		</div>
+        	</div>
+        </div>
+        
+        <!--
+        	作者：291879228@qq.com
+        	时间：2017-07-18
+        	描述：中间横条
+        -->
+        <div class="middle_banner"><img src="../img/declaration2.jpg"/></div>
+        <!--
+        	作者：291879228@qq.com
+        	时间：2017-07-18
+        	描述：商品展示
+        -->
+        <div class="product_show">
+        	<div class="left_product_detail">
+        		<div class="tab ">
+                    <div class="tab_select">
+                        <a href="javascript:void(0)" class="active">商品详情</a>
+                        <a href="javascript:void(0)" class="">评论 <span id="comments">(2178)</span></a>
+                        <a href="javascript:void(0)" class="">服务说明</a>
+                    </div>
+                    <div class="null"></div>
+                        <div class="ext_cart_info">
+                            <span id="ext_num">数量：1</span>
+                            <span id="ext_price">￥250</span>
+                            <button class="ext-shopping-cart"><i></i>加入购物车</button>
+                        </div>
+                    </div>
+               <p class="product_img_list"><img src="../img/products/p001_1.jpg"/>
+               <img src="../img/products/p001_2.jpg"/>
+               <img src="../img/products/p001_3.jpg"/>
+               <img src="../img/products/p001_4.jpg"/> 
+               </p>
+               <p class="product_comments_service">
+               	<img src="../img/comments.png"/>
+               	<img src="../img/fei-service-pay.jpg"/>
+               	<img src="../img/fei-service-ps.jpg"/>
+               	<img src="../img/fei-service-tui.jpg"/>
+               </p>
+        	 </div>
+        
+        	<div class="right_goods"></div>
+        </div>
+        <!--
+        	作者：291879228@qq.com
+        	时间：2017-07-18
+        	描述：右边栏商品推荐
+        -->
+        
+		<!--
+        	作者：291879228@qq.com
+        	时间：2017-07-17
+        	描述：footer
+        -->
+       
+        
+        <div id="footer"></div>
 	</body>
+	
 </html>

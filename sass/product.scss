@@ -1,3 +1,6 @@
+#header{
+    height: 176px;
+}
 //商品索引栏
 .product_index{
     width: 1000px;height: 58px;
@@ -9,7 +12,6 @@
 .product_box{
     width: 1000px;height: 550px;
     margin: 0 auto;
-    border: 1px solid red;
     .product_show_left{
         width: 400px;height: 540px;
         position: relative;
@@ -17,43 +19,255 @@
         .img_main{
             width: 400px;height: 400px;
             border: 1px solid #CCCCCC;
+            position: relative;
+            img{
+                width: 400px;height: 400px;
+            }
+            .len{
+                width: 200px;height: 200px;
+                display: none;
+                background: white;
+                opacity: 0.6;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border: 1px solid #CCCCCC;
+            }
         }
-        .img_big{
+        .bigimg{
+            display: none;
             width: 400px;height: 400px;
             position: absolute;
             top: 0;
             left: 405px;
-            border: 1px solid #122B40;
+            overflow: hidden;
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
         .product_small_imgs{
             width: 400px;height: 60px;
-            border: 1px solid green;
-           a{
+            margin-top: 5px;
+            a{
                display: inline-block;
                width: 20px;height: 30px;
                margin-top: 15px;
                background: url(../img/icons.png) no-repeat -2px -50px;
                float: left;   
-           }
-           .img_next{
+            }
+            .img_next{
                background-position: -29px -50px;
-           } 
-           ul{
+            } 
+            ul{
                width: 350px;height: 60px;
                float: left;
-               li{
+                li{
                    width: 60px;height: 60px;
                    border: 1px solid #C0C0C0;
                    float: left;margin: 0 4px;
-                   img{
+                    img{
                        width: 60px;height: 60px;
-                   }
-               }
-            
-           }
+                    }
+                }
+            }
         }
+    }
+    //右边商品详情
+    .product_detail{
+        width: 570px;
+        float: right;
+        .p1{
+            margin-top: 10px;
+        }
+        .p2{
+            margin-top: 10px;
+        }
+        .product_title{
+            font-size: 18px;
+            font-weight: 700;
+            color: black;
+        }
+        .product_price_box{
+            width: 570px;
+            border:1px dashed #C0C0C0 ;
+            margin-top: 10px;
+            ul{
+                li{
+                    width: 570px;
+                    margin-top: 10px;
+                    .price_label_1{
+                        display: inline-block;
+                        height: 30px;
+                        line-height: 30px;
+                        padding-left: 10px;
+                    }
+                    .price_label_2{
+                        display: inline-block;
+                        color:#f70800;
+                        font-size: 25px;
+                    }
+                    .price_label_3{
+                        padding-left: 10px;
+                        float: left;
+                        height: 40px;    
+                    }
+                    .product_price{     
+                        font-size: 30px;
+                        color:#f70800;
+                    }
+                    .product_promotion{
+                        .p5{
+                            margin-top: 4px;
+                            margin-bottom: 20px;
+                        }
+                        .tag{
+                            display: inline-block;
+                            width: 40px;height: 18px;
+                            border-radius:3px ;
+                            background: #ff504a;
+                            text-align: center;
+                            line-height: 18px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .product_sendto{
+            width: 570px;
+            p{
+                margin-top: 20px;
+                margin-left: 10px;
+                .amount_minus,.amount_add{
+                    display: inline-block;
+                    width: 26px;height: 26px;
+                    text-align: center;
+                    line-height: 26px;
+                    border: 1px solid #C0C0C0;
+                    cursor: pointer;
+                }
+                #product_buy_amount{
+                    width: 50px;height: 23px;
+                }
+            }
+            
+        }
+        .add_cart{
+            width: 570px;
+            #add_cart_btn{
+                width: 190px;height: 45px;
+                border: none;
+                border-radius:3px;
+                background: #ff504a;
+                font-size: 14px;
+                color: white;
+                margin-left:10px;
+                margin-top: 20px;
+                cursor: pointer;
+                i{
+                    display: inline-block;
+                }
+            }
+        } 
     }
 }
 
-
-
+//中间横条
+.middle_banner{
+    width: 1000px;height: 80px;
+    margin: 0 auto;
+}
+.product_show{
+    width: 1000px;height: 5800px;
+    margin: 0 auto;
+    .left_product_detail{
+        width: 790px;
+        float: left;
+        border: 1px solid #C0C0C0;
+        margin-top: 20px;
+        .product_img_list{
+            margin-top: 5px;
+            img{
+                width: 730px;height: 730px;
+                margin-left: 30px;
+            }
+        }
+        .product_comments_service{
+            img{
+              margin-left: 30px;  
+            }
+        }
+        .tab{
+            width: 790px;height: 43px;
+            .null{
+                width: 300px;height: 42px;
+                border-bottom:1px solid #CCCCCC ;
+                float: left;
+            }
+            .tab_select{
+              a{
+                 float: left;
+                  width: 162px;height: 42px;
+                  text-align: center;
+                  line-height: 42px;
+                  border: 1px solid #CCCCCC;
+                  border-left:none;border-top:none ;
+              } 
+              .active{
+                  border-bottom:none ;
+                  border-top:1px solid red ;
+              } 
+            }
+            .ext_cart_info{
+                display: none;
+            }
+        }
+        .tab_fixed{
+            width: 1000px;
+            position: fixed;
+            top: 0;left: 0;
+            right: 0;
+            background: #C7DDEF;
+            margin: 0 auto;
+            .ext_cart_info{
+                display: block;
+                width: 310px;height: 42px;
+                float: right;
+                #ext_num{
+                    width: 60px;height: 42px;
+                    float: left;
+                    text-align: center;
+                    line-height: 42px;
+                }
+                 #ext_price{
+                    width: 60px;height: 42px;
+                    float: left;
+                    text-align: center;
+                    line-height: 42px;
+                    font-size: 14px;
+                    color: #ff504a;
+                    font-weight: 600;
+                }
+                .ext-shopping-cart{
+                    width: 190px;height: 42px;
+                    border: none;
+                    text-align: center;
+                    line-height: 42px;
+                    background: #ff504a;
+                    font-size: 14px;
+                    color: white;
+                    cursor: pointer;
+                }
+                
+            }
+        }
+    }
+    .right_goods{
+        width: 190px;height: 500px;
+        border: 1px solid #C0C0C0;
+        margin-top: 20px;float: right;
+        
+    }
+}
