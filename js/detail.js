@@ -41,7 +41,7 @@ $(function(){
 			$(".bigimg img").css({left:-_left*2+"px",top:-_top*2+"px"})
 	})	
 	//小图片切换
-	$(".small_imgs_box li").click(function(){
+	$(".small_imgs_box").on("click","li",function(){
 		$(".img_main img").remove();
 		$(".bigimg img").remove();
 		$(this).css({"border":"1px solid red"})
@@ -119,23 +119,32 @@ $(function(){
 	$("#add_cart_btn,.ext-shopping-cart").click(function(){
 		var _amount_1=Number($("#product_buy_amount").val()),
 			_id=$(".product_id").html(),
+			_img=$(".small_imgs_box li:nth-child(1) img").attr("src"),
 			_title=$(".product_title").html(),
 			_price=$(".product_price").html(),
+			_have=false,
 			_cookie=$.cookie("products");
 			if(_cookie==null||_cookie==""){
-				var _cookie=[{"id":_id,"title":_title,"price":_price,"amount":_amount_1}];				
+				var _cookie=[{"id":_id,"title":_title,"img":_img,"price":_price,"amount":_amount_1}];				
 				$.cookie("products",_cookie,{expires:7});
 			}else{
 				for(var i=0,len=_cookie.length;i<len;i++){
 					if(_cookie[i].id===_id){
 						_cookie[i].amount+=_amount_1;
+						_have=true;
 						if(_cookie[i].amount>=99){
 							_cookie[i].amount=99;
 						}
 					}	
 				};
+				if(!_have){
+					_cookie.push({"id":_id,"title":_title,"img":_img,"price":_price,"amount":_amount_1});
+				}
+				
 				$.cookie("products",_cookie,{expires:7});
+				
 			}		
+			console.log(_cookie);
 	})
 	//end
 })

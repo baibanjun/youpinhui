@@ -15,7 +15,7 @@
 			<% for(i=0,len=list.length;i<len;i++){
 				var prod=list[i];%>
 			   <div class="index_list_goods">
-          			<a href="detail.html" target="_blank">
+          			<a href="<%=prod.url%>" target="_blank">
           			<div class="list_goods_detail">
           			<img src='<%=prod.img_main%>'/>
           			<p><a href="detail.html" target="_blank"><%=prod.title%></a></p>

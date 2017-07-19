@@ -4,7 +4,124 @@
 		<meta charset="UTF-8">
 		<title></title>
 	</head>
+	<link rel="stylesheet" type="text/css" href="../css/cart.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/header_footer.css"/>
+	<script src="../lib/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/template-native.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/cart.js" type="text/javascript" charset="utf-8"></script>
 	<body>
-		cart
+		
+		<script type="text/html" id="cart_goods_tem">
+			<%for(var i=0,len=list.length;i<len;i++){
+				var prod=list[i];%>
+			<div class="cart_goods">
+        				<div class="cart_goods_box">
+        					<div><input type="checkbox" class="ck_prod"/>
+        					<span id="product_id" style="display: none;"><%= prod.id%></span></div>
+        					<div><img src="<%= prod.img %>" style="width: 80px;height: 80px;border: 1px solid #CCCCCC;"/></div>
+        					<div><p><a href="p<%= prod.id%>.html"><%= prod.title %></a></p></div>
+        					<div><span>￥</span><span class="product_price"><%= prod.price %></span></div>
+        					<div><span class="minus">-</span>
+        						<input type="text" value="<%= prod.amount %>"/ class="buy_amount">
+        						<span class="add">+</span></div>
+        					<div><span style="font-weight:600;font-size: 14px;">￥</span>
+        						<span style="font-weight:600;font-size: 14px;" class="sub"><%= prod.amount*prod.price %></span></div>
+        					<div><span class="cart_goods_del"></span></div>
+        				</div>
+        		</div>
+        	<%}%>
+		</script>
+		<!--
+        	作者：291879228@qq.com
+        	时间：2017-07-19
+        	描述：顶部图片
+        -->
+		<div class="top_show"><div class="imgbox"><img src="../img/top1.jpg"/></div></div>
+		<!--
+        	作者：291879228@qq.com
+        	时间：2017-07-19
+        	描述： header
+        -->
+		<div class="top">
+			<div class="topbox">
+				<span class="top_gg">公告：</span>
+					<ul class="top_news">
+						<li><a href="#">【注意】自助语音订购说明</a></li>
+						<li><a href="#">【公告】防诈骗提醒</a></li>
+						<li><a href="#">【紧急通知】关于短信功能不能正常使用的说明</a></li>
+						<li><a href="#">【前方高能】千锋集团去年产值超过一千亿</a></li>
+					</ul>
+				<ul class="top_list">
+					<li><a href="register.html" target="_blank">注册</a><span>|</span></li>
+					<li><a href="login.html" target="_blank">登录</a><span>|</span></li>
+					<li><a href="#">我的订单</a><span>|</span></li>
+					<li><a href="#">物流查询</a><span>|</span></li>
+					<li><a href="#">我的关注</a><span>|</span></li>
+					<li><a href="#">资讯</a><span>|</span></li>
+					<li><a href="#">品牌馆</a><span>|</span></li>
+					<li><a href="#">手机优品惠</a><div class="top_ewm"><img src="../img/ewm.jpg" /></div></li>
+				</ul>
+			</div>
+		</div>
+		<!--
+        	作者：291879228@qq.com
+        	时间：2017-07-19
+        	描述：logo
+        -->
+        <div class="cart_logo">
+        	<img src="../img/cart-logo.png"/ class="img_1">
+        	<img src="../img/status_1.png" class="img_2"/>
+        </div>
+		<!--
+        	作者：291879228@qq.com
+        	时间：2017-07-19
+        	描述：购物车主体
+        -->
+        <div class="cart">
+        	<p class="mine_cart">我的购物车</p>
+        	<div class="cart_body">
+        		<div class="cart_title">
+        			<ul>
+        				<li><input type="checkbox"  class="check_all"/></li>
+        				<li>全选</li>
+        				<li>商品信息</li>
+        				<li>单价（元）</li>
+        				<li>数量</li>
+        				<li>小计</li>
+        				<li>操作</li>
+        			</ul>
+        		</div>
+        		<!--
+                	作者：291879228@qq.com
+                	时间：2017-07-19
+                	描述：购物车商品
+                -->
+        		<div class="cart_goods_list"></div>
+        		<!--
+                	作者：291879228@qq.com
+                	时间：2017-07-19
+                	描述：金额合计栏
+                -->
+        		<div class="cart_money_total">
+        			<p>商品合计：<span style="font-size: 14px;color: red;">5</span>件</p>
+        			<p>商品合计金额：<span style="font-size: 14px;color: red;">￥</span>
+        				<span style="font-size: 16px;color: red;font-weight: 600;" class="money_total">600</span></p>
+        			<p></p>
+        		</div>
+        		<div class="get_order">
+        			<input type="checkbox" class="check_all"/>全选
+        			<span id="detele_all"></span>删除
+        			<button id="get_order_btn">立即结算</button>
+        		</div>
+        	</div>
+        </div>
+		<!--
+        	作者：291879228@qq.com
+        	时间：2017-07-19
+        	描述：footer
+        -->
+		<div id="footer"></div>
+		
 	</body>
 </html>

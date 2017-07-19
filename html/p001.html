@@ -10,6 +10,30 @@
 		<script src="../js/detail.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
+		<script type="text/javascript">
+			$(function(){
+				$.getJSON("../data/index_list.json",function(json){
+					for (var i=0,len=json.length;i<len;i++){
+						var prod=json[i];
+						if(prod.id=="001"){
+							$(".product_id").html(prod.id);
+							var imgs=prod.imgs,html="";
+							for (var j=0,len=imgs.length;j<len;j++){
+								 html+="<li><img src='"+imgs[j]+"'/></li>"
+							};
+							$(".small_imgs_box").html(html);
+							$(".img_main img,.bigimg img").attr({"src":prod.img_main});
+							$(".product_brand").html(prod.brand);
+							$(".product_title").html(prod.title);
+							$(".product_introduce").html(prod.introduce);
+							$(".product_price").html(prod.price);
+							$("#ext_price").html("￥"+prod.price);
+							break;
+						}
+					}
+				})
+			})
+		</script>
 		<!--
         	作者：291879228@qq.com
         	时间：2017-07-17
@@ -37,19 +61,16 @@
         <div class="product_box">
         	<!--商品左边-->
         	<div class="product_show_left">
-        		<div class="img_main"><div class="len"></div></div>
-        		<div class="bigimg"></div>
+        		<div class="img_main"><div class="len"></div><img src=""/></div>
+        		<div class="bigimg"><img src=""/></div>
         	    <div class="product_small_imgs">
         	    	<a href="javascript:void(0)" class="img_before"></a>
         			<ul class="small_imgs_box">
-        				<li><img src="../img/products/p001_1.jpg"/></li>
-        				<li><img src="../img/products/p001_2.jpg"/></li>
-        				<li><img src="../img/products/p001_3.jpg"/></li>
-        				<li><img src="../img/products/p001_4.jpg"/></li>	
+        				
         			</ul>
         			<a href="javascript:void(0)" class="img_next"></a>
         	   	</div>
-        	   	<p>商品编号：<span class="product_id">003</span></p>
+        	   	<p>商品编号：<span class="product_id"></span></p>
         	</div>
         	<!--商品右边详情-->
         	<div class="product_detail">
@@ -60,7 +81,7 @@
         			<ul>
         				<li><span class="price_label_1">价格：</span>
         					<span class="price_label_2">￥</span>
-        					<span class="product_price">250</span></li>
+        					<span class="product_price"></span></li>
         				<li><span class="price_label_3">优惠：</span>
         					<div class="product_promotion">
         						<p><span class="tag">立减</span><span>TV商品下单立减10元</span></p>
@@ -104,7 +125,7 @@
                     <div class="null"></div>
                         <div class="ext_cart_info">
                             <span id="ext_num">数量：1</span>
-                            <span id="ext_price">￥250</span>
+                            <span id="ext_price"></span>
                             <button class="ext-shopping-cart"><i></i>加入购物车</button>
                         </div>
                     </div>
@@ -120,8 +141,42 @@
                	<img src="../img/fei-service-tui.jpg"/>
                </p>
         	 </div>
-        
-        	<div class="right_goods"></div>
+        <!--
+        	作者：291879228@qq.com
+        	时间：2017-07-19
+        	描述：右边小推荐
+        -->
+        	<div class="right_goods">
+        		<ul class="right_goods_box">
+        			<li>
+                    <a href="p001.html">
+                        <img src="../img/products/p001_1.jpg" title="优品惠晓芹 海参抢鲜升级组·海参*60头+鲍汁">
+                        <span class="right_title">晓芹 海参抢鲜升级组·海参*60头+鲍汁</span>
+                        <span class="right_price">
+                                <span><i>￥</i>256</span>
+                        </span>
+                    </a>
+                	</li>
+                	<li>
+                    <a href="p002.html">
+                        <img src="../img/products/p002_1.jpg" title="优品惠晓芹 海参抢鲜升级组·海参*60头+鲍汁">
+                        <span class="right_title">晓芹 海参抢鲜升级组·海参*60头+鲍汁</span>
+                        <span class="right_price">
+                                <span><i>￥</i>363</span>
+                        </span>
+                    </a>
+                	</li>
+                	<li>
+                    <a href="p003.html">
+                        <img src="../img/products/p003_1.jpg" title="优品惠晓芹 海参抢鲜升级组·海参*60头+鲍汁">
+                        <span class="right_title">晓芹 海参抢鲜升级组·海参*60头+鲍汁</span>
+                        <span class="right_price">
+                                <span><i>￥</i>554</span>
+                        </span>
+                    </a>
+                	</li>
+        		</ul>
+        	</div>
         </div>
         <!--
         	作者：291879228@qq.com

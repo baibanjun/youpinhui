@@ -48,6 +48,7 @@
 }
 
 .product_box .product_show_left .bigimg {
+  background: white;
   display: none;
   width: 400px;
   height: 400px;
@@ -331,8 +332,40 @@
 
 .product_show .right_goods {
   width: 190px;
-  height: 500px;
   border: 1px solid #C0C0C0;
   margin-top: 20px;
   float: right;
+}
+
+.product_show .right_goods .right_goods_box li {
+  padding: 20px 10px;
+}
+
+.product_show .right_goods .right_goods_box li a {
+  display: block;
+  width: 150px;
+}
+
+.product_show .right_goods .right_goods_box li a img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.product_show .right_goods .right_goods_box li a .right_title {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 32px;
+  overflow: hidden;
+  color: #222;
+}
+
+.product_show .right_goods .right_goods_box li a .right_price span {
+  display: block;
+  margin-right: 10px;
+  color: #f70800;
+  font-size: 16px;
+  font-family: Arial;
 }
